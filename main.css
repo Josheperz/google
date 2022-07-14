@@ -142,10 +142,71 @@ main .main-input .section-input .micro-icon {
   align-self: center;
   margin-left: 10px;
 }
-main .main-app {
+main .main-apps {
   margin: 0 auto;
   margin-top:40px;
   width: 560px;
   height: 300px;
-  background-color: burlywood;
+  
+}
+main .main-apps .app_card {
+  width: 112px;
+  height: 112px;
+  position: relative;
+  display:inline-grid;
+  transition-property: background;
+  transition-duration: 500ms;
+  border-radius: 8px;
+
+}
+main .main-apps .app_card:hover {
+  background-color: #e1dfdfc0;
+  
+  
+}
+main .main-apps .app_card .img_container {
+  width: 48px;
+  height: 48px;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  border-radius: 50%;
+
+  
+}
+
+main .main-apps .app_card .app_menu {
+  justify-self: end;
+  width: 26px;
+  height: 26px;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  position: absolute;
+  right: 6px;
+  top: 4px;
+  
+  /*---*/
+  background-image: url('./img/3puntos.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+
+}
+main .main-apps .app_card .app_menu img {
+  width: 24px;
+  height: 24px;
+}
+main .main-apps .app_card div img {
+  width: 28px;
+  height: 28px;
+
+}
+main .main-apps .app_card span {
+  font-size: 1.6rem;
+  line-height: 1.4rem;
+  text-align: center;
 }
